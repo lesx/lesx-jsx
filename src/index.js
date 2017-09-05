@@ -9,5 +9,5 @@ export default code => {
 			pragma: "React.createElement", // default pragma is React.createElement
 			useBuiltIns: true
 		}]]
-	}).code
+	}).code;
 };
