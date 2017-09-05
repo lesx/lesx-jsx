@@ -1,6 +1,6 @@
 # lesx-jsx 
 
-> 将jsx语法转化为`React.createElement`，支持控制流标签。
+> 将jsx语法转化为纯粹的`React.createElement`，无其他多余代码；同时，支持`jsx-control-statement`控制流标签。
 
 
 ## Installation
