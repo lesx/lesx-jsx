@@ -1,0 +1,48 @@
+{
+  "name": "lesx-jsx",
+  "version": "0.0.1",
+  "description": "Transform JSX in a babylon AST to call expressions",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rimraf lib && babel src --out-dir lib"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node4",
+      "stage-2"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lesx/lesx-jsx.git"
+  },
+  "keywords": [
+    "babylon",
+    "jsx",
+    "react"
+  ],
+  "author": "xiangzhong.wxz",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-generator": "6.14.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-external-helpers": "7.0.0-alpha.18",
+    "babel-plugin-istanbul": "^2.0.1",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2015-node4": "2.1.0",
+    "babel-preset-stage-2": "6.13.0",
+    "babel-register": "^6.14.0",
+    "babylon": "^6.18.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "jsx-control-statements": "^3.2.6"
+  }
+}
