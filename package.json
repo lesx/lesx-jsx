@@ -6,12 +6,6 @@
   "scripts": {
     "build": "rimraf lib && babel src --out-dir lib"
   },
-  "babel": {
-    "presets": [
-      "es2015-node4",
-      "stage-2"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/lesx/lesx-jsx.git"
@@ -26,23 +20,39 @@
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-eslint": "^6.1.2",
-    "babel-generator": "6.14.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-external-helpers": "7.0.0-alpha.18",
     "babel-plugin-istanbul": "^2.0.1",
+    "babel-plugin-transform-inline-imports-commonjs": "^1.2.0",
     "babel-plugin-transform-react-inline-elements": "^6.22.0",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-polyfill": "6.13.0",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-es2015-node4": "2.1.0",
+    "babel-preset-flow": "7.0.0-alpha.18",
+    "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-2": "6.13.0",
     "babel-register": "^6.14.0",
-    "babylon": "^6.18.0",
     "rimraf": "^2.6.1"
   },
   "dependencies": {
+    "babel-code-frame": "7.0.0-alpha.19",
     "babel-core": "^6.26.0",
+    "babel-generator": "7.0.0-alpha.19",
+    "babel-helpers": "7.0.0-alpha.19",
+    "babel-messages": "7.0.0-alpha.19",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "jsx-control-statements": "^3.2.6"
+    "babel-template": "7.0.0-alpha.19",
+    "babel-traverse": "7.0.0-alpha.19",
+    "babel-types": "7.0.0-alpha.19",
+    "convert-source-map": "^1.1.0",
+    "debug": "^2.1.1",
+    "json5": "^0.5.0",
+    "jsx-control-statements": "^3.2.6",
+    "lesx-parser": "^0.0.4",
+    "lodash": "^4.2.0",
+    "micromatch": "^2.3.11",
+    "resolve": "^1.3.2",
+    "source-map": "^0.5.0"
   }
 }

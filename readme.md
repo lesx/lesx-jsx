@@ -5,7 +5,15 @@
 
 ## TODO
 
-必须由`babel-core`的实现转化为`lesx-parser`、`babel-traverse`、`babel-generator`三步曲实现。
+~~必须由`babel-core`的实现转化为`lesx-parser`、`babel-traverse`、`babel-generator`三步曲实现。(因为后面需要被转化的代码肯定不会包含`script/style`之类的标签，所以没必要)~~  
+
+因为`babel`的插件机制特别恶心，以上操作无法转，要实现也只能到`babel-core`的核心代码里实现！  
+
+如果需要转换`script/style`之类的特殊标签，需要如下引用：
+
+```javascript
+const lesxJsx = require('lesx-jsx/lib/transform-with-spec-tags');
+```
 
 ## Installation
 
@@ -18,7 +26,7 @@ npm install lesx-jsx
 ## Usage
 
 ```js
-const lesxJsx = require('./');
+const lesxJsx = require('lesx-jsx');
 
 const source = `
     <div x="x" {...y} z>

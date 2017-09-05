@@ -1,6 +1,6 @@
 import {
 	transform,
-} from "babel-core";
+} from "./babel-core";
 
 import jsxControlStatements from 'jsx-control-statements';
 
