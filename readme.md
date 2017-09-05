@@ -3,6 +3,10 @@
 > 将jsx语法转化为纯粹的`React.createElement`，无其他多余代码；同时，支持`jsx-control-statement`控制流标签。
 
 
+## TODO
+
+必须由`babel-core`的实现转化为`lesx-parser`、`babel-traverse`、`babel-generator`三步曲实现。
+
 ## Installation
 
 Grab it from npm
