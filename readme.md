@@ -31,4 +31,17 @@ const code = lesxJsx(source);
 
 console.log('code:', code);
 
+/**
+React.createElement(
+    "div",
+    Object.assign({ x: "x" }, y, { z: true }),
+    "123",
+    test ? React.createElement(
+        "span",
+        null,
+        "Truth"
+    ) : null
+);
+*/
+
 ```
