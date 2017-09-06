@@ -6,10 +6,12 @@ import jsxControlStatements from 'jsx-control-statements';
 
 
 export default code => {
-	return transform(code, {
+	let jsxCode = transform(code, {
 		plugins: [jsxControlStatements, ["transform-react-jsx", {
 			pragma: "React.createElement", // default pragma is React.createElement
 			useBuiltIns: true
 		}]]
-	}).code;
+	}).code || '';
+
+	return jsxCode.trim();
 };
