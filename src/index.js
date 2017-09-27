@@ -24,6 +24,8 @@ export default code => {
 
 			return ${jsxCode.slice(index)}
 		`;
+	} else {
+		jsxCode = `return ${jsxCode}`;
 	}
 
 	return jsxCode;

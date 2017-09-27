@@ -1,6 +1,6 @@
 {
   "name": "lesx-jsx",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Transform JSX in a babylon AST to call expressions",
   "main": "lib/index.js",
   "scripts": {
